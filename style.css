@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#Left-arm-hand-elbow {
+    animation: left-arm 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Right-arm-hand {
+    animation: right-arm 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Legs-feet {
+    animation: legs-feet 1s ease infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#Hair {
+    animation: hair 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes left-arm {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(30deg);
+    }
+}
+
+@keyframes right-arm {
+    from {
+        transform: rotateZ(-20deg);
+    }
+
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes legs-feet {
+    from {
+        transform: rotateZ(-10deg);
+    }
+
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+
+@keyframes hair {
+    from {
+        transform: rotateZ(-5deg);
+    }
+
+    to {
+        transform: rotateZ(5deg);
+    }
+}
